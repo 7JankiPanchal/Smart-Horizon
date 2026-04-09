@@ -1,0 +1,16 @@
+{
+  "name": "autonomous-fraud-system",
+  "version": "1.0.0",
+  "description": "Multi-agent AI fraud investigation pipeline",
+  "scripts": {
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:ml": "cd ml-service && cross-env PYTHONIOENCODING=utf-8 python main.py",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:ml\"",
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix backend && cd ml-service && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^10.1.0"
+  }
+}

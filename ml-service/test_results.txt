@@ -1,0 +1,87 @@
+﻿python : Traceback (most 
+recent call last):
+At line:1 char:1
++ python -m 
+tests.test_pipeline 2>&1 
+| Out-File -FilePath 
+test_results. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  raceback (most recent   
+  call last)::String)     
+[], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  File "<frozen runpy>", 
+line 198, in 
+_run_module_as_main
+  File "<frozen runpy>", 
+line 88, in _run_code
+  File "D:\Coding\Projects
+\Hackathon Project\project
+\ml-service\tests\test_pip
+eline.py", line 10, in 
+<module>
+    
+asyncio.run(run_tests())
+  File "C:\Program Files\W
+indowsApps\PythonSoftwareF
+oundation.Python.3.11_3.11
+.2544.0_x64__qbz5n2kfra8p0
+\Lib\asyncio\runners.py", 
+line 190, in run
+    return 
+runner.run(main)
+           
+^^^^^^^^^^^^^^^^
+  File "C:\Program Files\W
+indowsApps\PythonSoftwareF
+oundation.Python.3.11_3.11
+.2544.0_x64__qbz5n2kfra8p0
+\Lib\asyncio\runners.py", 
+line 118, in run
+    return self._loop.run_
+until_complete(task)
+           ^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\W
+indowsApps\PythonSoftwareF
+oundation.Python.3.11_3.11
+.2544.0_x64__qbz5n2kfra8p0
+\Lib\asyncio\base_events.p
+y", line 654, in 
+run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\Coding\Projects
+\Hackathon Project\project
+\ml-service\tests\__init__
+.py", line 228, in 
+run_tests
+    print("  \U0001f9ea 
+FRAUD INVESTIGATION 
+PIPELINE ù TEST HARNESS")
+  File "C:\Program Files\W
+indowsApps\PythonSoftwareF
+oundation.Python.3.11_3.11
+.2544.0_x64__qbz5n2kfra8p0
+\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_
+encode(input,self.errors,e
+ncoding_table)[0]
+           ^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode character 
+'\U0001f9ea' in position 
+2: character maps to 
+<undefined>
+
+======================================================================
